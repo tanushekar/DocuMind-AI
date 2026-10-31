@@ -1,0 +1,19 @@
+# Virtual environment
+venv/
+env/
+
+# API keys and secrets
+.env
+.streamlit/secrets.toml
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDE files
+.vscode/
+
+# Model cache
+.cache/
+
+*.pdf
