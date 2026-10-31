@@ -17,7 +17,10 @@ from google import genai
 
 load_dotenv()
 
-API_KEY = os.getenv("GEMINI_API_KEY")
+API_KEY = st.secrets.get(
+    "GEMINI_API_KEY",
+    os.getenv("GEMINI_API_KEY", "")
+)
 GEMINI_MODEL = "gemini-3.5-flash-lite"
 
 st.set_page_config(
